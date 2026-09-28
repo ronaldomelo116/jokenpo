@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(/assets/img/background.png);
+    background: url(assets/img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,7 +88,7 @@ h1 {
 
 @media (max-width: 768px) {
     body {
-        background: url(/assets/img/background-9por16.png);
+        background: url(assets/img/background-9por16.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
