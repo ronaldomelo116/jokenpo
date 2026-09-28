@@ -22,6 +22,12 @@ body {
     border-radius: 10px;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     text-align: center;
     margin: 20px;
@@ -55,7 +61,16 @@ h1 {
 .conteiner-score {
     display: flex;
     gap: 10px;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+
+.result {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: inset 0 0 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
 }
 
 .your-score,
@@ -65,7 +80,7 @@ h1 {
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 600;
-    background-color: #fff ;
+    background-color: #fff;
     box-shadow: inset 0 0 10px rgb(0 0 0 / 0.5);
     border-radius: 10px;
     padding: 10px;
@@ -73,9 +88,9 @@ h1 {
 
 @media (max-width: 768px) {
     body {
-    background: url(/assets/img/background-9por16.png);
-     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;   
-}
+        background: url(/assets/img/background-9por16.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
