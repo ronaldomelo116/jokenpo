@@ -4,12 +4,18 @@ const machineScore = document.querySelector('#machinecore');
 let humanScoreNumber = 0;
 let machineScoreNUmber = 0;
 
+const GAME_OPTIONS = {
+    ROCK: 'rock',
+    PAPER: 'paper',
+    SCISSORS: 'scissors'
+}
+
 const playHuman = (playChoice) => {
     playTheGame(playChoice, playMachine());
 }
 
 const playMachine = () => {
-    const choices = ['rock', 'paper', 'scissors'];
+    const choices = [GAME_OPTIONS.ROCK, GAME_OPTIONS.PAPER, GAME_OPTIONS.SCISSORS];
     const randomNumber = Math.floor(Math.random() * 3);
 
     return choices[randomNumber];
@@ -24,9 +30,9 @@ const playTheGame = (human, machine) => {
         result.style.color = 'blue';
     }
 
-    else if (human === 'rock' && machine === 'scissors' ||
-        human === 'scissors' && machine === 'paper' ||
-        human === 'paper' && machine === 'rock') {
+    else if (human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS ||
+        human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER ||
+        human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK) {
         result.innerHTML = 'Você ganhou!';
         result.style.color = 'green';
         humanScoreNumber++
