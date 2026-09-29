@@ -10,6 +10,29 @@
 </head>
 
 <body>
+    <div class="modal-overlay" id="modal">
+        <div class="modal-box">
+            <p class="modal-result" id="modal-result"></p>
+
+            <div class="modal-choices">
+
+                <div class="modal-player" id="modal-player">
+                    <p>Você</p>
+                    <img id="img-human" src="" alt="sua escolha">
+                </div>
+
+                <span class="modal-vs">VS</span>
+
+                <div class="modal-player" id="modal-machine">
+                    <p>Máquina</p>
+                    <img id="img-machine" src="" alt="escolha da máquina">
+                </div>
+
+            </div>
+            <button class="modal-close" id="modal-close" onclick="closeModal()">Jogar de novo</button>
+        </div>
+    </div>
+
     <main class="container">
 
         <h1>JokenPô</h1>
@@ -34,7 +57,7 @@
         </div>
     </main>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
